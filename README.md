@@ -4,6 +4,8 @@ Sitio estático en español para presentar servicios y solicitar cotizaciones po
 
 La identidad visual toma como referencia las piezas de Instagram proporcionadas: crema, rojo y azul marino, tramas de puntos y recortes. Conserva el logotipo cromado original de la presentación.
 
+El lema es **Sácala del estadio con Criollo**. Las frases de los cuatro servicios del carrusel conservan su redacción original; los demás servicios mantienen descripciones directas de la presentación.
+
 ## Ver la página
 
 Abre `index.html` en tu navegador, conservando `styles.css`, `script.js` y la carpeta `assets` en sus ubicaciones. No requiere instalación de dependencias ni compilación.
