@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101114">
+  <meta name="theme-color" content="#fff9e6">
   <title>Criollo Content Studio — Contenido, diseño y producción</title>
   <meta name="description" content="Redes sociales, producción audiovisual, diseño gráfico, eventos, impresión y fabricación para tu marca. Elige un servicio y cotiza por WhatsApp con Criollo Studio.">
+  <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -13,7 +14,7 @@
   <a class="skip-link" href="#contenido">Ir al contenido</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Criollo Content Studio, inicio">CRIOLLO<span>CONTENT STUDIO</span></a>
+      <a class="brand" href="#inicio" aria-label="Criollo Content Studio, inicio"><img src="assets/criollo-logo.webp" alt="Criollo" width="2400" height="1250"><span>CONTENT STUDIO</span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>
         <span>Menú</span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
@@ -30,64 +31,70 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">CRIOLLO · PRODUCTORA CREATIVA</p>
-          <h1>Contenido, diseño<br>y producción<br><span>para tu marca.</span></h1>
-          <p class="hero-description">Desde tus redes sociales hasta tu próximo evento. Reunimos el talento creativo y técnico que necesita tu proyecto.</p>
+          <h1>Contenido.<br>Diseño.<br><span class="headline-cutout">Producción.</span></h1>
+          <p class="hero-tagline">Pa' poner tu marca en otra liga.</p>
+          <p class="hero-description">Redes sociales, audiovisual, diseño y eventos. Un equipo creativo para llevar tus ideas del banco al terreno de juego.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#servicios">Ver servicios <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
             <a class="button button-whatsapp" data-whatsapp href="https://wa.me/584220603133?text=Hola%2C%20Criollo%20Studio.%20Quiero%20conversar%20sobre%20un%20proyecto.">
               <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.8a8.5 8.5 0 1 1 16.2-3.9Z"/><path d="M8 7.6c.2-.2.5-.2.7.2l1 2c.1.3-.1.6-.5.9-.3.2 1.5 2.3 2.9 2.9.3.1.6-.7.9-.9.2-.2.5-.1.7 0l1.8.9c.3.1.4.3.3.6-.1.8-.7 1.6-1.6 1.6-3.2 0-7.2-3.7-7.2-6.6 0-.7.3-1.3 1-1.6Z"/></svg>
-              Hablar por WhatsApp
+              <span><span class="desktop-action-copy">Hablar por </span>WhatsApp</span>
             </a>
           </div>
           <p class="hero-note">¿Todavía no sabes qué servicio elegir? Cuéntanos tu idea.</p>
         </div>
-        <figure class="hero-visual">
-          <img src="assets/criollo-cover.jpg" alt="Logotipo cromado de Criollo" width="1800" height="1013" fetchpriority="high" decoding="async">
-          <figcaption><span>ESTRATEGIA + CREATIVIDAD + PRODUCCIÓN</span><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></figcaption>
-        </figure>
+        <div class="hero-visual">
+          <a class="ig-sticker" href="https://www.instagram.com/criollostudiove/" target="_blank" rel="noopener noreferrer">@criollostudiove</a>
+          <img class="collage-art" src="assets/criollo-collage.webp" alt="" width="1183" height="1329" decoding="async" aria-hidden="true">
+          <div class="logo-cutout"><img src="assets/criollo-logo.webp" alt="Criollo, logotipo cromado original" width="2400" height="1250" decoding="async"></div>
+          <span class="poster-stamp" aria-hidden="true">Ideas que<br>dan en la base.</span>
+          <span class="poster-caption">ESTRATEGIA / CREATIVIDAD / PRODUCCIÓN</span>
+        </div>
       </div>
     </section>
+
+    <div class="brand-ribbon" aria-hidden="true"><span>CREATIVIDAD CON CARÁCTER</span><svg class="ribbon-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M6 6l12 12M6 18 18 6"/></svg><span>TU MARCA, OTRA LIGA</span><svg class="ribbon-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M6 6l12 12M6 18 18 6"/></svg><span>CRIOLLO CONTENT STUDIO</span></div>
 
     <section id="servicios" class="section services-section">
       <div class="container">
         <div class="section-heading">
-          <div><p class="eyebrow">NUESTROS SERVICIOS</p><h2>¿Qué necesita tu marca?</h2></div>
+          <div><p class="eyebrow">NUESTROS SERVICIOS</p><h2>Pilla nuestros<br><span class="section-cutout">servicios.</span></h2></div>
           <p>Elige un servicio para preparar tu cotización.<br>También podemos combinar varias especialidades.</p>
         </div>
         <div class="services-grid">
           <article class="service-card">
             <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4M9 7h6M9 11h6"/></svg></span>
-            <h3>Redes sociales y web</h3><p>Construye la presencia digital de tu marca con estrategia y contenido.</p>
+            <h3>Redes sociales y web</h3><p>Pa' que no te ponches en el crecimiento de tu marca.</p>
             <ul><li>Gestión de redes y comunidades</li><li>Estrategia y asesorías</li><li>Desarrollo de sitios web</li></ul>
             <a class="service-link" href="#quote-form" data-service="Redes sociales y web" aria-label="Cotizar redes sociales y web">Cotizar servicio <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
           </article>
           <article class="service-card">
             <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="14" height="12" rx="2"/><path d="m17 10 4-3v10l-4-3M8 6l2-3h4l2 3"/></svg></span>
-            <h3>Producción audiovisual</h3><p>Cuenta tu historia con imágenes y contenido creado para cada medio.</p>
+            <h3>Producción audiovisual</h3><p>Tu historia, por parte de los cuarto bates del medio.</p>
             <ul><li>Fotografía y video</li><li>Contenido para marcas</li><li>Producción de cine y televisión</li></ul>
             <a class="service-link" href="#quote-form" data-service="Producción audiovisual" aria-label="Cotizar producción audiovisual">Cotizar servicio <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
           </article>
           <article class="service-card">
             <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 16-1 5 5-1L20 8l-4-4L4 16ZM13 7l4 4M4 16l4 4"/></svg></span>
-            <h3>Diseño gráfico</h3><p>Dale forma a las ideas y mensajes que quieres comunicar.</p>
-            <ul><li>Diseño para tu marca</li><li>Piezas de comunicación visual</li><li>Apoyo creativo para proyectos</li></ul>
+            <h3>Diseño gráfico</h3><p>Te la ponemos bombita para que tengas presencia.</p>
+            <ul><li>Branding y rebranding</li><li>Animación de logos</li><li>Piezas de comunicación visual</li></ul>
             <a class="service-link" href="#quote-form" data-service="Diseño gráfico" aria-label="Cotizar diseño gráfico">Cotizar servicio <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
           </article>
           <article class="service-card">
             <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V7l9-4 9 4v14M7 21V9h10v12M1 21h22M10 13h4"/></svg></span>
-            <h3>Eventos y stands</h3><p>Lleva tu marca a espacios y experiencias que conectan con las personas.</p>
+            <h3>Eventos y stands</h3><p>No te arrugues con la gestión. Tu evento sale a jugar.</p>
             <ul><li>Producción de eventos</li><li>Stands para activaciones</li><li>Letras y estructuras de marca</li></ul>
             <a class="service-link" href="#quote-form" data-service="Eventos, stands y corpóreos" aria-label="Cotizar eventos y stands">Cotizar servicio <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
           </article>
           <article class="service-card">
             <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8V3h12v5M6 17H3V8h18v9h-3M6 14h12v7H6zM17 11h1"/></svg></span>
-            <h3>Impresión</h3><p>Haz visibles tus ideas con materiales impresos de pequeño y gran formato.</p>
+            <h3>Impresión</h3><p>Tu marca también juega fuera de la pantalla.</p>
             <ul><li>Impresión en pequeño formato</li><li>Impresión en gran formato</li><li>Equipos de tecnología avanzada</li></ul>
             <a class="service-link" href="#quote-form" data-service="Impresión" aria-label="Cotizar impresión">Cotizar servicio <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
           </article>
           <article class="service-card">
             <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 4 16 16-4 1L3 8l1-4ZM13 4l7 7M16 1l7 7M14 10l-4 4M11 17l-5 5-4-4 5-5"/></svg></span>
-            <h3>Carpintería y herrería</h3><p>Construye piezas y estructuras adaptadas a las necesidades de tu proyecto.</p>
+            <h3>Carpintería y herrería</h3><p>De la idea a una pieza con carácter, hecha a tu medida.</p>
             <ul><li>Trabajos de carpintería</li><li>Trabajos de herrería</li><li>Fabricación según especificaciones</li></ul>
             <a class="service-link" href="#quote-form" data-service="Carpintería y herrería" aria-label="Cotizar carpintería y herrería">Cotizar servicio <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
           </article>
@@ -149,7 +156,7 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#inicio">CRIOLLO<span>CONTENT STUDIO</span></a><a href="https://www.instagram.com/criollostudiove/" target="_blank" rel="noopener noreferrer">Instagram · @criollostudiove <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><span>© <span id="year">2026</span> Criollo Content Studio</span></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#inicio"><img src="assets/criollo-logo.webp" alt="Criollo" width="2400" height="1250"><span>CONTENT STUDIO</span></a><a href="https://www.instagram.com/criollostudiove/" target="_blank" rel="noopener noreferrer">Instagram · @criollostudiove <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><span>© <span id="year">2026</span> Criollo Content Studio</span></div></footer>
   <div class="quick-contact" aria-label="Accesos rápidos">
     <a class="quick-services" href="#servicios">Ver servicios</a>
     <a class="quick-whatsapp" data-whatsapp href="https://wa.me/584220603133?text=Hola%2C%20Criollo%20Studio.%20Quiero%20conversar%20sobre%20un%20proyecto."><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.8a8.5 8.5 0 1 1 16.2-3.9Z"/><path d="M8 7.6c.2-.2.5-.2.7.2l1 2c.1.3-.1.6-.5.9-.3.2 1.5 2.3 2.9 2.9.3.1.6-.7.9-.9.2-.2.5-.1.7 0l1.8.9c.3.1.4.3.3.6-.1.8-.7 1.6-1.6 1.6-3.2 0-7.2-3.7-7.2-6.6 0-.7.3-1.3 1-1.6Z"/></svg>WhatsApp</a>

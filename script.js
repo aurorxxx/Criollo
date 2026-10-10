@@ -49,7 +49,7 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('.site-header')) closeMenu();
 });
-window.matchMedia('(max-width: 760px)').addEventListener('change', () => closeMenu());
+window.matchMedia('(max-width: 820px)').addEventListener('change', () => closeMenu());
 
 function updateSelection() {
   selectionStatus.textContent = service.value
@@ -69,7 +69,7 @@ document.querySelectorAll('[data-service]').forEach(link => {
     closeMenu();
     const topInset = document.querySelector('.site-header').getBoundingClientRect().height + 18;
     const mobileBar = document.querySelector('.quick-contact').getBoundingClientRect();
-    const bottomLimit = window.matchMedia('(max-width: 760px)').matches ? mobileBar.top : window.innerHeight;
+    const bottomLimit = window.matchMedia('(max-width: 820px)').matches ? mobileBar.top : window.innerHeight;
     const formTop = form.getBoundingClientRect().top + window.scrollY;
     const projectBottom = description.getBoundingClientRect().bottom + window.scrollY;
     const scrollTop = Math.max(0, formTop - topInset, projectBottom - bottomLimit + 20);
@@ -86,7 +86,7 @@ form.addEventListener('focusin', event => {
   window.requestAnimationFrame(() => {
     const rect = event.target.getBoundingClientRect();
     const topLimit = document.querySelector('.site-header').getBoundingClientRect().height + 12;
-    const bottomLimit = window.matchMedia('(max-width: 760px)').matches
+    const bottomLimit = window.matchMedia('(max-width: 820px)').matches
       ? document.querySelector('.quick-contact').getBoundingClientRect().top - 12
       : window.innerHeight - 12;
     const adjustment = rect.top < topLimit || rect.height > bottomLimit - topLimit
