@@ -53,7 +53,7 @@
           <p class="hero-description">Estrategia, contenido y producción para darle presencia a tu marca.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#proyectos">Ver proyectos <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
-            <a class="button button-whatsapp" data-whatsapp href="https://wa.me/584220603133?text=Hola%2C%20Criollo%20Studio.%20Quiero%20conversar%20sobre%20un%20proyecto.">
+            <a class="button button-whatsapp" data-whatsapp href="https://wa.me/584220603133?text=Hola%2C%20Criollo%20Content%20Studio.%20Quiero%20conversar%20sobre%20un%20proyecto.">
               <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.8a8.5 8.5 0 1 1 16.2-3.9Z"/><path d="M8 7.6c.2-.2.5-.2.7.2l1 2c.1.3-.1.6-.5.9-.3.2 1.5 2.3 2.9 2.9.3.1.6-.7.9-.9.2-.2.5-.1.7 0l1.8.9c.3.1.4.3.3.6-.1.8-.7 1.6-1.6 1.6-3.2 0-7.2-3.7-7.2-6.6 0-.7.3-1.3 1-1.6Z"/></svg>
               <span><span class="desktop-action-copy">Hablar por </span>WhatsApp</span>
             </a>
@@ -78,11 +78,16 @@
           <div><p class="eyebrow">PORTAFOLIO</p><h2 id="projects-heading">Proyectos<br><span class="section-cutout">destacados.</span></h2></div>
           <p>Conoce las piezas y el trabajo de quienes forman el equipo de Criollo.</p>
         </div>
-        <article class="project-case" aria-labelledby="akira-project">
+        <article id="akira" class="project-case" aria-labelledby="akira-project" tabindex="-1">
           <div class="project-intro">
             <div><p class="project-category">VISUALES PARA CONCIERTO</p><h3 id="akira-project">AKIRA</h3></div>
-            <div><p>Modelado 3D en Blender para visuales de un concierto de AKIRA.</p><p class="project-credit">Créditos: <strong>David Picón</strong> · Trabajo de un integrante del equipo.</p></div>
+            <div><p>Visuales en 3D para un concierto de AKIRA.</p><p class="project-credit">Créditos: <a href="#david-picon">David Picón</a> · Trabajo de un integrante del equipo.</p></div>
           </div>
+          <dl class="project-details">
+            <div><dt>Objetivo</dt><dd>Crear visuales en 3D para acompañar un concierto de AKIRA.</dd></div>
+            <div><dt>Participación</dt><dd>Modelado 3D en Blender por David Picón.</dd></div>
+            <div><dt>Entrega</dt><dd>Dos piezas audiovisuales: lettering cromado y personaje en 3D.</dd></div>
+          </dl>
           <div class="project-media-grid">
             <figure class="project-piece">
               <video class="project-video" controls playsinline muted preload="none" poster="assets/projects/proyecto-01-poster.jpg" width="1280" height="720" aria-labelledby="akira-lettering" aria-describedby="akira-lettering-description">
@@ -144,23 +149,39 @@
 
     <section id="como-contratar" class="section process-section">
       <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">CÓMO TRABAJAMOS</p><h2>Tu proyecto empieza aquí.</h2></div><p>Primero entendemos lo que necesitas.<br>Después definimos la propuesta.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">CÓMO TRABAJAMOS</p><h2>De la idea<br>a la ejecución.</h2></div><p>Un proceso compartido para entender tu proyecto, acordar el alcance y llevarlo a producción.</p></div>
         <ol class="process-grid">
-          <li><span class="step-number" aria-hidden="true">01</span><h3>Elige un servicio</h3><p>Selecciona una especialidad o háblanos de tu proyecto integral.</p></li>
-          <li><span class="step-number" aria-hidden="true">02</span><h3>Cuéntanos tu idea</h3><p>Comparte los detalles y la fecha que tienes en mente por WhatsApp.</p></li>
-          <li><span class="step-number" aria-hidden="true">03</span><h3>Define la propuesta</h3><p>Conversamos sobre el alcance y la cotización antes de comenzar.</p></li>
+          <li><span class="step-number" aria-hidden="true">01</span><h3>Conversamos</h3><p>Conocemos tu marca, los objetivos del proyecto y lo que necesitas.</p></li>
+          <li><span class="step-number" aria-hidden="true">02</span><h3>Definimos la propuesta</h3><p>Acordamos el alcance, las entregas y la cotización antes de comenzar.</p></li>
+          <li><span class="step-number" aria-hidden="true">03</span><h3>Producimos</h3><p>Coordinamos la ejecución y desarrollamos las piezas acordadas, con comunicación durante cada etapa.</p></li>
         </ol>
         <a class="text-link" href="#contacto">Preparar mi cotización <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
       </div>
     </section>
 
-    <section id="equipo" class="section team-section">
+    <section id="equipo" class="section team-section" aria-labelledby="team-heading">
       <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">EL EQUIPO</p><h2>Talento para cada reto.</h2></div><p>Experiencia en estrategia, contenido<br>y producción al servicio de tu marca.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">CRIOLLO CONTENT STUDIO</p><h2 id="team-heading">El equipo detrás<br>de la <span class="team-cutout">jugada.</span></h2></div><p>Combinamos estrategia, dirección creativa y producción audiovisual para llevar cada proyecto de la idea a la ejecución. Conoce a quienes hacen equipo en Criollo.</p></div>
         <div class="people-grid">
-          <article><span class="person-role">ESTRATEGIA DIGITAL</span><h3>Alejandra Martínez</h3><p>Community management, gestión de redes y SEO. Experiencia en marketing de moda y gestión de marcas.</p></article>
-          <article><span class="person-role">FOTOGRAFÍA Y VIDEO</span><h3>Adrian Albarrán</h3><p>Fotógrafo y filmmaker con participación en Caballero Universal, Miss Global y Miss Planet.</p></article>
-          <article><span class="person-role">DIRECCIÓN CREATIVA</span><h3>David Picón</h3><p>Colorista audiovisual, productor y director creativo. Experiencia con Polar, Golfera, Grupo Diageo y Unilever.</p></article>
+          <article id="alejandra-martinez" class="person-card" aria-labelledby="alejandra-name" tabindex="-1">
+            <span class="person-number" aria-hidden="true">01</span>
+            <h3 id="alejandra-name">Alejandra Martínez</h3>
+            <p class="person-role">Dirección de proyectos y estrategia</p>
+            <p class="person-bio">Conecta los objetivos de cada cliente con la planificación y ejecución del proyecto. Su experiencia combina estrategia digital, gestión de marcas y coordinación de equipos, con foco en organizar el trabajo y mantener una comunicación clara durante cada etapa.</p>
+          </article>
+          <article id="adrian-albarran" class="person-card" aria-labelledby="adrian-name" tabindex="-1">
+            <span class="person-number" aria-hidden="true">02</span>
+            <h3 id="adrian-name">Adrian Albarrán</h3>
+            <p class="person-role">Fotografía y realización audiovisual</p>
+            <p class="person-bio">Fotógrafo y filmmaker con experiencia en proyectos vinculados a Caballero Universal, Miss Global y Miss Planet. En Criollo, aporta su mirada a la creación de fotografías y videos que expresan la identidad de cada marca, cuidando la composición y el lenguaje visual.</p>
+          </article>
+          <article id="david-picon" class="person-card" aria-labelledby="david-name" tabindex="-1">
+            <span class="person-number" aria-hidden="true">03</span>
+            <h3 id="david-name">David Picón</h3>
+            <p class="person-role">Dirección creativa y producción audiovisual</p>
+            <p class="person-bio">Director creativo, productor y colorista audiovisual. Su trayectoria incluye trabajos vinculados a Polar, Golfera, Grupo Diageo y Unilever. En Criollo, desarrolla conceptos visuales y combina dirección, color y herramientas de creación 3D para dar forma a piezas con identidad.</p>
+            <a class="person-project" href="#akira">Ver AKIRA · Visuales para concierto <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </article>
         </div>
         <p class="team-context">Las referencias de marcas y eventos corresponden a la trayectoria individual de cada integrante.</p>
       </div>
@@ -172,7 +193,7 @@
           <p class="eyebrow">HABLEMOS DE TU PROYECTO</p><h2>Solicita tu<br>cotización.</h2>
           <p>Completa los detalles y continúa en WhatsApp para conversar con el equipo de Criollo.</p>
           <div class="direct-contact"><h3>¿Prefieres hablar directamente?</h3><p>Escríbenos aunque todavía no tengas todos los detalles.</p>
-            <a class="button button-whatsapp" data-whatsapp href="https://wa.me/584220603133?text=Hola%2C%20Criollo%20Studio.%20Quiero%20conversar%20sobre%20un%20proyecto.">Abrir WhatsApp <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            <a class="button button-whatsapp" data-whatsapp href="https://wa.me/584220603133?text=Hola%2C%20Criollo%20Content%20Studio.%20Quiero%20conversar%20sobre%20un%20proyecto.">Abrir WhatsApp <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
             <span class="contact-number">+58 422 060 3133</span>
           </div>
         </div>
@@ -200,7 +221,7 @@
   <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#inicio"><img src="assets/criollo-logo-header.webp" alt="Criollo" width="400" height="208" loading="lazy" decoding="async"><span>CONTENT STUDIO</span></a><a href="https://www.instagram.com/criollostudiove/" target="_blank" rel="noopener noreferrer">Instagram · @criollostudiove <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><span>© <span id="year">2026</span> Criollo Content Studio</span></div></footer>
   <div class="quick-contact" aria-label="Accesos rápidos">
     <a class="quick-services" href="#proyectos">Ver proyectos</a>
-    <a class="quick-whatsapp" data-whatsapp href="https://wa.me/584220603133?text=Hola%2C%20Criollo%20Studio.%20Quiero%20conversar%20sobre%20un%20proyecto."><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.8a8.5 8.5 0 1 1 16.2-3.9Z"/><path d="M8 7.6c.2-.2.5-.2.7.2l1 2c.1.3-.1.6-.5.9-.3.2 1.5 2.3 2.9 2.9.3.1.6-.7.9-.9.2-.2.5-.1.7 0l1.8.9c.3.1.4.3.3.6-.1.8-.7 1.6-1.6 1.6-3.2 0-7.2-3.7-7.2-6.6 0-.7.3-1.3 1-1.6Z"/></svg>WhatsApp</a>
+    <a class="quick-whatsapp" data-whatsapp href="https://wa.me/584220603133?text=Hola%2C%20Criollo%20Content%20Studio.%20Quiero%20conversar%20sobre%20un%20proyecto."><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.8a8.5 8.5 0 1 1 16.2-3.9Z"/><path d="M8 7.6c.2-.2.5-.2.7.2l1 2c.1.3-.1.6-.5.9-.3.2 1.5 2.3 2.9 2.9.3.1.6-.7.9-.9.2-.2.5-.1.7 0l1.8.9c.3.1.4.3.3.6-.1.8-.7 1.6-1.6 1.6-3.2 0-7.2-3.7-7.2-6.6 0-.7.3-1.3 1-1.6Z"/></svg>WhatsApp</a>
   </div>
 </body>
 </html>

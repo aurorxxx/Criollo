@@ -1,6 +1,6 @@
 const WHATSAPP_NUMBER = '584220603133';
 const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}`;
-const GENERAL_MESSAGE = 'Hola, Criollo Studio. Quiero conversar sobre un proyecto.';
+const GENERAL_MESSAGE = 'Hola, Criollo Content Studio. Quiero conversar sobre un proyecto.';
 
 const form = document.getElementById('quote-form');
 const service = document.getElementById('service');
@@ -137,7 +137,7 @@ form.addEventListener('submit', event => {
   if (!form.reportValidity()) return;
 
   const name = nameInput.value.trim();
-  const greeting = name ? `Hola, Criollo Studio. Soy ${name}.` : 'Hola, Criollo Studio.';
+  const greeting = name ? `Hola, Criollo Content Studio. Soy ${name}.` : 'Hola, Criollo Content Studio.';
   const message = `${greeting} Quiero solicitar una cotización.\n\nServicio: ${service.value}\nProyecto: ${project}`;
   formStatus.textContent = '';
   window.location.assign(`${WHATSAPP_BASE}?text=${encodeURIComponent(message)}`);

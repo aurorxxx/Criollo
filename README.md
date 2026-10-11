@@ -8,9 +8,21 @@ El lema es **Sácala del estadio con Criollo**. La portada explica la propuesta 
 
 El orden es portada → proyectos → servicios → cómo trabajamos → equipo → contacto. Los servicios se agrupan en estrategia digital, diseño y branding, producción audiovisual, y eventos y activaciones. Web, impresión, carpintería, herrería y corpóreos siguen incluidos dentro de esas áreas.
 
+El nombre completo es **Criollo Content Studio** y también se utiliza en los mensajes de WhatsApp. «Criollo» se conserva como nombre corto y en el lema.
+
+## Equipo y proceso
+
+«El equipo detrás de la jugada» presenta los perfiles proporcionados de Alejandra Martínez (dirección de proyectos y estrategia), Adrian Albarrán (fotografía y realización audiovisual) y David Picón (dirección creativa y producción audiovisual). Las tarjetas mantienen nombres destacados, cargos legibles y biografías visibles sobre fondos crema. Las referencias a marcas y eventos corresponden a la trayectoria individual de cada integrante.
+
+El perfil de David enlaza al caso AKIRA y los créditos del caso enlazan a su perfil. Solo se conectan participaciones confirmadas: todavía no hay otros trabajos de Alejandra y Adrian disponibles en el portafolio. Los retratos, fotografías del equipo trabajando y nuevos casos de estrategia, fotografía, branding y eventos quedan pendientes de material real; no se sustituyen por imágenes ficticias.
+
+«Cómo trabajamos» describe el proyecto completo en tres etapas: **Conversamos**, **Definimos la propuesta** y **Producimos**. La cotización sigue disponible en el formulario y por contacto directo.
+
 ## Portafolio
 
 El caso **AKIRA — visuales para concierto** reúne los dos videos proporcionados. Los créditos corresponden a **David Picón**, integrante del equipo de Criollo, por modelado 3D en Blender. El caso presenta dos piezas de un mismo proyecto, no dos clientes distintos. Consulta `assets/projects/README.md` para el origen de los archivos y sus versiones web.
+
+El caso explica el objetivo (visuales para acompañar un concierto), la participación (modelado 3D en Blender) y la entrega (lettering cromado y personaje en 3D). No atribuye resultados o conceptos de campaña que no hayan sido confirmados.
 
 Los videos usan controles nativos, reproducción en línea y `preload="none"`; se descargan al reproducirlos y no se reproducen automáticamente. Al iniciar uno se pausa el otro. Los fotogramas de portada provienen de los videos originales. Las piezas no tienen diálogo y cuentan con descripciones visibles.
 
