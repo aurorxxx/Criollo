@@ -1,10 +1,18 @@
 # Criollo Content Studio
 
-Sitio estático en español para presentar servicios y solicitar cotizaciones por WhatsApp.
+Sitio estático en español para mostrar trabajos del equipo, presentar servicios y solicitar cotizaciones por WhatsApp.
 
 La identidad visual toma como referencia las piezas de Instagram proporcionadas: crema, rojo y azul marino, tramas de puntos y recortes. Conserva el logotipo cromado original de la presentación.
 
-El lema es **Sácala del estadio con Criollo**. Las frases de los cuatro servicios del carrusel conservan su redacción original; los demás servicios mantienen descripciones directas de la presentación.
+El lema es **Sácala del estadio con Criollo**. La portada explica la propuesta «Estrategia, contenido y producción para darle presencia a tu marca». Las frases de béisbol proceden del carrusel y acompañan descripciones claras de los servicios.
+
+El orden es portada → proyectos → servicios → cómo trabajamos → equipo → contacto. Los servicios se agrupan en estrategia digital, diseño y branding, producción audiovisual, y eventos y activaciones. Web, impresión, carpintería, herrería y corpóreos siguen incluidos dentro de esas áreas.
+
+## Portafolio
+
+El caso **AKIRA — visuales para concierto** reúne los dos videos proporcionados. Los créditos corresponden a **David Picón**, integrante del equipo de Criollo, por modelado 3D en Blender. El caso presenta dos piezas de un mismo proyecto, no dos clientes distintos. Consulta `assets/projects/README.md` para el origen de los archivos y sus versiones web.
+
+Los videos usan controles nativos, reproducción en línea y `preload="none"`; se descargan al reproducirlos y no se reproducen automáticamente. Al iniciar uno se pausa el otro. Los fotogramas de portada provienen de los videos originales. Las piezas no tienen diálogo y cuentan con descripciones visibles.
 
 ## Ver la página
 
@@ -24,13 +32,19 @@ Para cambiar el contacto, actualiza `WHATSAPP_NUMBER` en `script.js` y los enlac
 
 ## Archivos
 
-- `index.html`: servicios, pasos de contratación, contacto y equipo.
+- `index.html`: portada, proyectos, servicios, cómo trabajamos, equipo y contacto.
 - `styles.css`: diseño adaptable, menú móvil y acceso persistente a WhatsApp.
 - `script.js`: menú accesible, selección de servicio y generación del mensaje.
-- `assets/criollo-logo.webp`: logotipo original con transparencia, extraído de la presentación; conversión sin pérdida con píxeles idénticos al PNG conservado.
-- `assets/criollo-collage.webp`: ilustración decorativa generada para esta web, con referencias al béisbol y la producción audiovisual. No representa trabajos del portafolio.
+- `assets/criollo-logo-header.webp`: versión de 400 × 208 para la cabecera y el pie, con transparencia y compresión sin pérdida.
+- `assets/criollo-logo-hero.webp`: versión de 1000 × 521 del logo original para la portada.
+- `assets/criollo-collage-web.webp`: ilustración decorativa reducida a 720 × 809 para la web. No representa trabajos del portafolio.
+- `assets/criollo-social.jpg`: imagen de 1200 × 630 para compartir el enlace, incluida en Open Graph y Twitter Card.
+- `assets/projects/`: dos MP4 optimizados de AKIRA, fotogramas de portada y créditos.
+- `assets/criollo-logo.webp` y `assets/criollo-collage.webp`: versiones originales en WebP conservadas como recursos fuente.
 - `assets/criollo-logo.png` y `assets/criollo-collage.png`: archivos originales de los recursos anteriores.
 - `assets/criollo-cover.jpg`: portada de la presentación, conservada como recurso de la versión anterior.
 - `assets/fonts/`: fuentes locales DM Sans, Fraunces y Criollo Mono (derivada de IBM Plex Mono), con licencias SIL OFL y documentación de origen. No se consultan servicios externos de fuentes.
 
-Para publicar, carga `index.html`, `styles.css`, `script.js`, las imágenes WebP y `assets/fonts/` en un alojamiento de sitios estáticos, manteniendo la estructura de carpetas. Los PNG y la portada anterior pueden quedar fuera del despliegue.
+Para publicar, carga `index.html`, `styles.css`, `script.js`, los tres WebP usados por la página, `criollo-social.jpg`, `assets/projects/` y `assets/fonts/` en un alojamiento de sitios estáticos, manteniendo la estructura de carpetas. Los PNG, la portada anterior y los WebP de tamaño original pueden quedar fuera del despliegue.
+
+Las URL de `canonical`, Open Graph y Twitter Card apuntan a `https://aurorxxx.github.io/Criollo/`. Actualízalas junto con la URL absoluta de la imagen si cambia el dominio del sitio.

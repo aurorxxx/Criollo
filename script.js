@@ -51,6 +51,35 @@ document.addEventListener('click', event => {
 });
 window.matchMedia('(max-width: 820px)').addEventListener('change', () => closeMenu());
 
+function visibleContentBottom() {
+  const viewport = window.visualViewport;
+  const viewportBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
+  return window.matchMedia('(max-width: 820px)').matches
+    ? Math.min(viewportBottom, document.querySelector('.quick-contact').getBoundingClientRect().top)
+    : viewportBottom;
+}
+
+function keepControlVisible(control) {
+  const rect = control.getBoundingClientRect();
+  const topLimit = document.querySelector('.site-header').getBoundingClientRect().bottom + 12;
+  const bottomLimit = visibleContentBottom() - 12;
+  const adjustment = rect.top < topLimit || rect.height > bottomLimit - topLimit
+    ? rect.top - topLimit
+    : Math.max(0, rect.bottom - bottomLimit);
+  if (adjustment) window.scrollBy({ top: adjustment, behavior: 'instant' });
+}
+
+// Each piece starts only on request; pause the other piece when playing one.
+const projectVideos = [...document.querySelectorAll('.project-video')];
+projectVideos.forEach(video => {
+  video.addEventListener('play', () => {
+    projectVideos.forEach(other => { if (other !== video) other.pause(); });
+  });
+  video.addEventListener('focus', () => {
+    window.requestAnimationFrame(() => keepControlVisible(video));
+  });
+});
+
 function updateSelection() {
   selectionStatus.textContent = service.value
     ? `Servicio seleccionado: ${service.options[service.selectedIndex].text}.`
@@ -68,8 +97,7 @@ document.querySelectorAll('[data-service]').forEach(link => {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     closeMenu();
     const topInset = document.querySelector('.site-header').getBoundingClientRect().height + 18;
-    const mobileBar = document.querySelector('.quick-contact').getBoundingClientRect();
-    const bottomLimit = window.matchMedia('(max-width: 820px)').matches ? mobileBar.top : window.innerHeight;
+    const bottomLimit = visibleContentBottom();
     const formTop = form.getBoundingClientRect().top + window.scrollY;
     const projectBottom = description.getBoundingClientRect().bottom + window.scrollY;
     const scrollTop = Math.max(0, formTop - topInset, projectBottom - bottomLimit + 20);
@@ -83,17 +111,14 @@ document.querySelectorAll('[data-service]').forEach(link => {
 // Keep focused form controls above the fixed mobile contact bar.
 form.addEventListener('focusin', event => {
   if (selectingService || !event.target.matches('input, select, textarea, button')) return;
-  window.requestAnimationFrame(() => {
-    const rect = event.target.getBoundingClientRect();
-    const topLimit = document.querySelector('.site-header').getBoundingClientRect().height + 12;
-    const bottomLimit = window.matchMedia('(max-width: 820px)').matches
-      ? document.querySelector('.quick-contact').getBoundingClientRect().top - 12
-      : window.innerHeight - 12;
-    const adjustment = rect.top < topLimit || rect.height > bottomLimit - topLimit
-      ? rect.top - topLimit
-      : Math.max(0, rect.bottom - bottomLimit);
-    if (adjustment) window.scrollBy({ top: adjustment, behavior: 'instant' });
-  });
+  window.requestAnimationFrame(() => keepControlVisible(event.target));
+});
+
+window.visualViewport?.addEventListener('resize', () => {
+  const active = document.activeElement;
+  if (active?.matches('#quote-form input, #quote-form select, #quote-form textarea, #quote-form button, .project-video')) {
+    window.requestAnimationFrame(() => keepControlVisible(active));
+  }
 });
 
 description.addEventListener('input', () => {
